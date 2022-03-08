@@ -11,6 +11,12 @@ def call() {
                     sh 'git version'
                 }
             }
+            stage('Phunky-Verify') {                  
+                steps {
+                    echo "Build_number: ${BUILD_NUMBER}"
+                    sh 'whomai'
+                }
+            }
         }
     }
 }
