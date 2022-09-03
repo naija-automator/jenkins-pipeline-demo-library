@@ -3,7 +3,7 @@ def call() {
       sh '''
         git version
         docker version
-        java  --version
+        java  version
       '''
     }
 }
